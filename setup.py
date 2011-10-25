@@ -11,5 +11,5 @@ setup(name = 'scraper',
       url = 'https://github.com/fjavieralba/scraper',
       data_files = [('/etc/scraper', ['conf/scraper.yml'])],
       packages = ['scraper', 'scraper.sites'],
-      scripts = ['scripts/run_scrapers.py']
+      scripts = ['scripts/run_scraper.py']
       )

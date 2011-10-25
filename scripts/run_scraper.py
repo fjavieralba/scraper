@@ -5,10 +5,7 @@ import sys
 import re
 import time
 
-from Queue import Queue
-from scraper import Crawler
-from scraper import Scraper
-from scraper import Indexer
+import scraper
 
 import yaml
 import logging
