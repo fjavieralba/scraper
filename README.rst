@@ -15,10 +15,11 @@ Scrape using xpath:
 >>> content = requests.get('https://github.com/explore').content
 >>> 
 >>> conf = {
-...     'trending-repos' : {'xpath' : '//ol[@class="ranked-repositories"]/li/h3'}
+...     'trending-repos' : {'xpath' : //ol/li/h3/a[2]/@href}
 ... }
 >>> 
 >>> scraper.scrapes(content, conf)
+{'trending-repos': ['/jamescryer/grumble.js', '/dominictarr/JSON.sh', '/JamieLottering/DropKick', '/harvesthq/chosen', '/velvia/ScalaStorm']}
 
 Scrape using regexp:
 --------------------
