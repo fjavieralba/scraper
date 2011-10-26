@@ -10,23 +10,30 @@
 """
 
 from lxml import html
-    
+import re
+
 def scrape(fd, conf):
     return scrapes(fd.read(), conf)
         
 def scrapes(html_string, conf):
-    page = html.fromstring(html_string)
-    return process(page, conf)
+    html_tree = html.fromstring(html_string)
+    return process(html_tree, html_string, conf)
 
-def process(page, conf):
+def process(html_tree, html_string, conf):
     result = {}
     for field in conf:
-        xpath = conf[field]['xpath']
-        scraped = page.xpath(xpath)
+        if 'xpath' in conf[field]:
+            xpath = conf[field]['xpath']
+            scraped = html_tree.xpath(xpath)
         
-        if isinstance(scraped, list):
-            scraped = map(lambda x : x.text, scraped)
-        
+            if isinstance(scraped, list):
+                try:
+                    scraped = map(lambda x : x.text, scraped)
+                except:
+                    pass
+        elif 'regexp' in conf[field]:
+            regexp = conf[field]['regexp']
+            scraped = re.findall(regexp, html_string)
 
         result[field] = scraped
 
