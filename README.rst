@@ -35,10 +35,10 @@ Scrape using regexp:
     conf = {
             'numbers': 
                 {'regexp': '91[\s\d]+', 
-                 'transf': [lambda x: x.strip], 
+                 'transf': [lambda x: x.strip()], 
                  'encoding': 'utf-8'}
             }
 
     scraper.scrapes(content, conf)
 
-    >>> {'numbers': ['915 029 300', '915 029 560 ', '915 029 330 \n', '91 ']}
+    >>> {'numbers': [u'915 029 300', u'915 029 560', u'915 029 330', u'91']}
