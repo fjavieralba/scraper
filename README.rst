@@ -6,9 +6,10 @@ Configurable Python Web Scraper
 Usage
 .....
 
-Scrape using xpath::
+Scrape using xpath:
 -------------------
 
+::
     import scraper
     import requests
      
@@ -20,9 +21,10 @@ Scrape using xpath::
 
     >>> {'trending-repos': ['/jamescryer/grumble.js', '/dominictarr/JSON.sh', '/JamieLottering/DropKick', '/harvesthq/chosen', '/velvia/ScalaStorm']}
 
-Scrape using regexp::
+Scrape using regexp:
 --------------------
 
+::
     import scraper
     import requests
 
