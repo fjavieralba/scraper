@@ -1,8 +1,4 @@
 sites: ['example']
-scraper_threads_per_site: 8
-indexer_threads_per_site: 1
-index_batch_size: 50
-solr_base_url: 'http://my_solr:8080/solr'
 log_file: 'logs/scraper.log'
 net:
   proxies:
