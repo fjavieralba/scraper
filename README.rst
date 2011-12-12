@@ -10,6 +10,7 @@ Scrape using xpath:
 -------------------
 
 ::
+
     import scraper
     import requests
      
@@ -25,6 +26,7 @@ Scrape using regexp:
 --------------------
 
 ::
+
     import scraper
     import requests
 
