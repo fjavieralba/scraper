@@ -1,13 +1,2 @@
-sites: ['example']
 log_file: 'logs/scraper.log'
-net:
-  proxies:
-    http: '188.40.53.67:3128'
-    https: '188.40.53.67:3128'
-  user_agents:
-    [
-      'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.X.Y.Z Safari/525.13.',
-      'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; es-es) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1',
-    ]
-  get_timeout: 60
 
