@@ -1,7 +1,20 @@
-scraper
+Scraper
 =======
 
-Configurable Python Web Scraper
+Minimalist Python HTML Scraper
+
+Description
+...........
+
+This python package is intended to be
+
+Installation
+............
+
+::
+
+  python setup.py install
+
 
 Usage
 .....
