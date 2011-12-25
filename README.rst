@@ -1,12 +1,20 @@
 Scraper
 =======
 
-Minimalist Python HTML Scraper
+Minimalist Python file Scraper
 
 Description
 ...........
 
-This python package is intended to be
+This module is an easy to use HTML/XML scraper. It supports both XPath and Regular 
+Expression retrieval.
+
+Once you have a file you want to extract information from, you can extract
+multiple pieces of information with a simple function call.
+
+You should obtain the files you want to scrape by your own ways. 
+(I recommend you the requests module).
+
 
 Installation
 ............
