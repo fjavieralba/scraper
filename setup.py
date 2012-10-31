@@ -9,7 +9,7 @@ setup(  name = 'scraper',
         url='http://pypi.python.org/pypi/scraper/',
         license='LICENSE.txt',
         description = 'Configurable Python Web Scraper',
-        long_description=open('README.txt').read(),
+        long_description=open('README.rst').read(),
         install_requires=[
             "lxml >= 3.0.1",
         ],
