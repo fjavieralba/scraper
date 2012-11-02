@@ -1,6 +1,7 @@
-=======
+
 Scraper
-=======
+#######
+
 
 Minimalist Python DOM Scraper
 
